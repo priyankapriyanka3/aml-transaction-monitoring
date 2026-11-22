@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Critical layout fallback - prevents stacking before Tailwind loads */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  overflow: auto;
+}
+
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  h1, h2, h3, h4, p, ul {
+    @apply m-0 p-0;
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  a {
+    @apply text-secondary no-underline;
+  }
+
+  button, input, textarea {
+    @apply font-sans;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-primary outline-offset-2;
+  }
+}
+
+/* Utility classes matching Material 3 design system */
+@layer utilities {
+  .touch-target {
+    @apply min-h-touch min-w-touch;
+  }
+
+  .muted {
+    @apply text-on-surface-variant;
+  }
+
+  /* Animation utilities */
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Scrim overlay */
+  .bg-scrim {
+    background-color: rgba(0, 0, 0, 0.32);
+  }
+}

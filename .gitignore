@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+/backend/build/
+/backend/develop-eggs/
+/backend/dist/
+/backend/downloads/
+/backend/eggs/
+/backend/.eggs/
+/backend/lib/
+/backend/lib64/
+/backend/parts/
+/backend/sdist/
+/backend/var/
+/backend/wheels/
+/backend/share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+/backend/.venv/
+/backend/venv/
+/backend/ENV/
+/backend/env/
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+*.log
+
+# Backend specific
+/backend/.env
+/backend/app.db
+/backend/app.db-shm
+/backend/app.db-wal
+/backend/_migration_check.db
+
+# Frontend
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+.pids
+
+# Verification harness (used during testing, not part of deliverable)
+/backend/_start_server.py
+/backend/_stop_server.py
+/.verification/
+
+# Auto-added by pipeline
+.pass_summaries/
+*.pyc
+.verification/

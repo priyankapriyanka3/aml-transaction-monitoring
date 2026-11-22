@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    x-preview-port: 9000
+    environment:
+      DATABASE_URL: sqlite:////data/app.db
+      JWT_SECRET_KEY: dev-secret-key-change-in-production
+      JWT_ALGORITHM: HS256
+      JWT_EXPIRATION_MINUTES: 480
+      CORS_ORIGINS: http://localhost
+      DEBUG: "false"
+      RATE_LIMIT_ENABLED: "false"
+    volumes:
+      - backend-data:/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        BACKEND_HOST: backend
+    ports:
+      - "80:80"
+    x-preview-port: 80
+    depends_on:
+      - backend
+
+volumes:
+  backend-data:

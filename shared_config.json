@@ -1,0 +1,24 @@
+{
+  "api_base_path": "/v1",
+  "auth": {
+    "login_endpoint": "/auth/login",
+    "login_request": {
+      "field_names": ["username", "password"]
+    },
+    "login_response": {
+      "token_field": "auth_token",
+      "user_field": "user"
+    },
+    "header_format": "Bearer {token}",
+    "storage_key": "aml_auth_token"
+  },
+  "pagination": {
+    "wrapper": {
+      "items": "array",
+      "total": "integer",
+      "page": "integer",
+      "page_size": "integer"
+    },
+    "default_page_size": 20
+  }
+}
