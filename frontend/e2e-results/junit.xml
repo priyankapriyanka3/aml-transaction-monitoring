@@ -1,0 +1,55 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="18.511058999999996">
+<testsuite name="journey_alert_to_recommendation.spec.ts" timestamp="2026-11-21T15:44:26.666Z" hostname="" tests="1" failures="1" skipped="0" time="13.734" errors="0">
+<testcase name="Journey: Alert Triage → Case Creation → Investigation → Recommendation › should complete full investigator workflow from alert to recommendation" classname="journey_alert_to_recommendation.spec.ts" time="13.734">
+<system-out>
+<![CDATA[✓ Step 1: Logged in as investigator
+✓ Step 2: Alert queue loaded
+  First alert already assigned, looking for unassigned alert...
+✓ Step 3: Alert assigned
+✓ Step 4: Alert triaged with INVESTIGATE outcome
+
+[[ATTACHMENT|../test-results/journey_alert_to_recommend-56c21-rom-alert-to-recommendation/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/journey_alert_to_recommend-56c21-rom-alert-to-recommendation/video.webm]]
+
+[[ATTACHMENT|../test-results/journey_alert_to_recommend-56c21-rom-alert-to-recommendation/error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  journey_alert_to_recommendation.spec.ts:17:3 › Journey: Alert Triage → Case Creation → Investigation → Recommendation › should complete full investigator workflow from alert to recommendation 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('article').filter({ has: locator('button').filter({ hasText: 'Triage' }) }).first().locator('button').filter({ hasText: 'Create case' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('article').filter({ has: locator('button').filter({ hasText: 'Triage' }) }).first().locator('button').filter({ hasText: 'Create case' }) with timeout 5000ms
+      - waiting for locator('article').filter({ has: locator('button').filter({ hasText: 'Triage' }) }).first().locator('button').filter({ hasText: 'Create case' })
+
+
+      87 |     // After triage, the "Create case" button should be visible and enabled
+      88 |     const createCaseButton = assignedAlert.locator('button', { hasText: 'Create case' });
+    > 89 |     await expect(createCaseButton).toBeVisible({ timeout: 5000 });
+         |                                    ^
+      90 |     await expect(createCaseButton).toBeEnabled();
+      91 |     await createCaseButton.click();
+      92 |
+        at /app/data/projects/c386608821af/output/0260655a6fc1/repos/aml-transaction-monitoring/frontend/e2e/journey_alert_to_recommendation.spec.ts:89:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/journey_alert_to_recommend-56c21-rom-alert-to-recommendation/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/journey_alert_to_recommend-56c21-rom-alert-to-recommendation/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/journey_alert_to_recommend-56c21-rom-alert-to-recommendation/error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

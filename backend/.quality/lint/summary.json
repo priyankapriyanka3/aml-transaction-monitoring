@@ -1,0 +1,421 @@
+{
+  "status": "issues_found",
+  "target_path": "/repos/aml-transaction-monitoring/backend",
+  "requested_linters": [
+    "ruff"
+  ],
+  "applicable_linters": [
+    "ruff",
+    "shellcheck",
+    "shfmt"
+  ],
+  "selected_linters": [
+    "ruff"
+  ],
+  "message": "All findings, including any findings omitted from the inline response, are available in the report files listed under `report_paths`.",
+  "summary": {
+    "errors": 579,
+    "warnings": 0,
+    "total_findings": 579,
+    "inline_findings": 50,
+    "remaining_findings": 529,
+    "linters_run": 1,
+    "linters_with_issues": 1,
+    "linters_unavailable": 0
+  },
+  "by_tool": {
+    "ruff": {
+      "status": "issues_found",
+      "errors": 579,
+      "warnings": 0,
+      "total_findings": 579,
+      "inline_findings": 50,
+      "remaining_findings": 529,
+      "files": [
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/env.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 1,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 9,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261121_160128_fix_uuid_and_datetime_types.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.dialects.postgresql.UUID` imported but unused",
+              "line": 10,
+              "column": 52,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/70e3a29542df_initial_schema_with_all_15_tables.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/config.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 1,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/middleware/auth_middleware.py",
+          "findings": [
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 13,
+              "column": 49,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 14,
+              "column": 19,
+              "code": "B008"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/case_alert_link.py",
+          "findings": [
+            {
+              "msg": "`sqlalchemy.String` imported but unused",
+              "line": 4,
+              "column": 46,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/alert_repository.py",
+          "findings": [
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 91,
+              "column": 41,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 120,
+              "column": 41,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 129,
+              "column": 41,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/case_note_repository.py",
+          "findings": [
+            {
+              "msg": "`datetime.datetime` imported but unused",
+              "line": 5,
+              "column": 22,
+              "code": "F401"
+            },
+            {
+              "msg": "`uuid.uuid4` imported but unused",
+              "line": 6,
+              "column": 18,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/case_repository.py",
+          "findings": [
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 36,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 115,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 139,
+              "column": 40,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 156,
+              "column": 28,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/information_request_repository.py",
+          "findings": [
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 44,
+              "column": 28,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/session_repository.py",
+          "findings": [
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 36,
+              "column": 43,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/routers/alerts.py",
+          "findings": [
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 36,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 37,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 71,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 72,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 93,
+              "column": 38,
+              "code": "UP017"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 107,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 108,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 142,
+              "column": 66,
+              "code": "UP017"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 161,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 162,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 190,
+              "column": 40,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/routers/audit_events.py",
+          "findings": [
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 23,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 24,
+              "column": 26,
+              "code": "B008"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/routers/auth.py",
+          "findings": [
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 17,
+              "column": 48,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 50,
+              "column": 50,
+              "code": "B008"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/routers/cases.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 5,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 45,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 46,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 74,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 75,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 99,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 100,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 139,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 140,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 187,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 188,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 219,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 220,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 249,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 250,
+              "column": 26,
+              "code": "B008"
+            }
+          ]
+        }
+      ],
+      "report_path": "/repos/aml-transaction-monitoring/backend/.quality/lint/ruff-result.json",
+      "truncated": true
+    }
+  },
+  "report_dir": "/repos/aml-transaction-monitoring/backend/.quality/lint",
+  "report_paths": {
+    "summary": "/repos/aml-transaction-monitoring/backend/.quality/lint/summary.json",
+    "ruff": "/repos/aml-transaction-monitoring/backend/.quality/lint/ruff-result.json"
+  },
+  "truncated": true
+}
