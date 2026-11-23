@@ -1,0 +1,27 @@
+# AML Workbench Android - Local Configuration Template
+# Copy this file to local.properties and customize for your environment
+
+# === API Configuration ===
+# Base URL for the AML Workbench backend API
+# Local development (default)
+API_BASE_URL=http://10.0.2.2:9000
+
+# Physical device on same network (uncomment and update with your machine's IP)
+# API_BASE_URL=http://192.168.1.100:9000
+
+# Production server (uncomment and configure)
+# API_BASE_URL=https://api.aml-workbench.example.com
+
+# === Android SDK Location ===
+# Path to Android SDK (required for Gradle builds)
+# Typically set automatically by Android Studio
+# Uncomment and set manually if needed:
+# sdk.dir=/Users/username/Library/Android/sdk  # macOS
+# sdk.dir=C\:\\Users\\username\\AppData\\Local\\Android\\sdk  # Windows
+# sdk.dir=/home/username/Android/Sdk  # Linux
+
+# === Notes ===
+# - Use 10.0.2.2 for Android emulator to access host machine's localhost
+# - Use actual IP address (192.168.x.x) for physical devices
+# - Ensure backend is running and accessible from the device/emulator
+# - Test connectivity with: adb shell curl http://10.0.2.2:9000/health

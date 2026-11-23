@@ -1,0 +1,824 @@
+{
+  "status": "issues_found",
+  "target_path": "/repos/aml-transaction-monitoring/backend",
+  "requested_linters": [
+    "ruff"
+  ],
+  "applicable_linters": [
+    "ruff"
+  ],
+  "selected_linters": [
+    "ruff"
+  ],
+  "message": "All findings, including any findings omitted from the inline response, are available in the report files listed under `report_paths`.",
+  "summary": {
+    "errors": 429,
+    "warnings": 0,
+    "total_findings": 429,
+    "inline_findings": 100,
+    "remaining_findings": 329,
+    "linters_run": 1,
+    "linters_with_issues": 1,
+    "linters_unavailable": 0
+  },
+  "by_tool": {
+    "ruff": {
+      "status": "issues_found",
+      "errors": 429,
+      "warnings": 0,
+      "total_findings": 429,
+      "inline_findings": 100,
+      "remaining_findings": 329,
+      "files": [
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/env.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 11,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_001_create_users_and_sessions.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.dialects.sqlite` imported but unused",
+              "line": 10,
+              "column": 33,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_002_create_alert_tables.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_003_create_case_tables.py",
+          "findings": [
+            {
+              "msg": "Import from `collections.abc` instead: `Sequence`",
+              "line": 8,
+              "column": 1,
+              "code": "UP035"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 17,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 18,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 19,
+              "column": 13,
+              "code": "UP007"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_004_create_rule_snapshots_table.py",
+          "findings": [
+            {
+              "msg": "Import from `collections.abc` instead: `Sequence`",
+              "line": 8,
+              "column": 1,
+              "code": "UP035"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 16,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 17,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 18,
+              "column": 13,
+              "code": "UP007"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_005_create_case_notes_table.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_006_create_evidence_gap_tables.py",
+          "findings": [
+            {
+              "msg": "Import from `collections.abc` instead: `Sequence`",
+              "line": 8,
+              "column": 1,
+              "code": "UP035"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 16,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 17,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 18,
+              "column": 13,
+              "code": "UP007"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/alembic/versions/20261122_1400_007_create_assignment_decision_tables.py",
+          "findings": [
+            {
+              "msg": "Import from `collections.abc` instead: `Sequence`",
+              "line": 8,
+              "column": 1,
+              "code": "UP035"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 8,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 16,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 17,
+              "column": 16,
+              "code": "UP007"
+            },
+            {
+              "msg": "Use `X | Y` for type annotations",
+              "line": 18,
+              "column": 13,
+              "code": "UP007"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/core/security.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `X | None` for type annotations",
+              "line": 44,
+              "column": 21,
+              "code": "UP045"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 56,
+              "column": 24,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/database.py",
+          "findings": [
+            {
+              "msg": "Import from `collections.abc` instead: `Generator`",
+              "line": 2,
+              "column": 1,
+              "code": "UP035"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Unnecessary `pass` statement",
+              "line": 10,
+              "column": 5,
+              "code": "PIE790"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/main.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/middleware/auth.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`typing.Optional` imported but unused",
+              "line": 2,
+              "column": 20,
+              "code": "F401"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 15,
+              "column": 49,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 16,
+              "column": 19,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 46,
+              "column": 26,
+              "code": "B008"
+            },
+            {
+              "msg": "Do not perform function call `Depends` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+              "line": 76,
+              "column": 41,
+              "code": "B008"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/__init__.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`__all__` is not sorted",
+              "line": 19,
+              "column": 11,
+              "code": "RUF022"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/account.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 28,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/alert.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 41,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/audit_event.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 32,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/case.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 43,
+              "column": 38,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 47,
+              "column": 38,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 48,
+              "column": 39,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/case_alert_link.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.String` imported but unused",
+              "line": 4,
+              "column": 24,
+              "code": "F401"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 43,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/case_decision.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 34,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/case_note.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 40,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/case_review_assignment.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.orm.relationship` imported but unused",
+              "line": 5,
+              "column": 51,
+              "code": "F401"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 38,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/customer.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 24,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/evidence_gap.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.Column` imported but unused",
+              "line": 4,
+              "column": 24,
+              "code": "F401"
+            },
+            {
+              "msg": "`sqlalchemy.dialects.postgresql.UUID` imported but unused",
+              "line": 5,
+              "column": 52,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/information_request.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.Column` imported but unused",
+              "line": 4,
+              "column": 24,
+              "code": "F401"
+            },
+            {
+              "msg": "`sqlalchemy.dialects.postgresql.UUID` imported but unused",
+              "line": 5,
+              "column": 52,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/request_attachment.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`sqlalchemy.Column` imported but unused",
+              "line": 4,
+              "column": 24,
+              "code": "F401"
+            },
+            {
+              "msg": "`sqlalchemy.dialects.postgresql.UUID` imported but unused",
+              "line": 5,
+              "column": 52,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/rule_snapshot.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 39,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/session.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`datetime.timezone` imported but unused",
+              "line": 3,
+              "column": 32,
+              "code": "F401"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/transaction.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 33,
+              "column": 38,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/models/user.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 26,
+              "column": 38,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 30,
+              "column": 38,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 31,
+              "column": 39,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/alert_repository.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/case_repository.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "`datetime.datetime` imported but unused",
+              "line": 3,
+              "column": 22,
+              "code": "F401"
+            },
+            {
+              "msg": "Redefinition of unused `datetime` from line 3: `datetime` redefined here",
+              "line": 158,
+              "column": 30,
+              "code": "F811"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 159,
+              "column": 44,
+              "code": "UP017"
+            },
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 274,
+              "column": 9,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/decision_repository.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 41,
+              "column": 53,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 109,
+              "column": 48,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 122,
+              "column": 48,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/information_request_repository.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 40,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 123,
+              "column": 47,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/readiness_repository.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 33,
+              "column": 28,
+              "code": "UP017"
+            },
+            {
+              "msg": "Use `datetime.UTC` alias",
+              "line": 92,
+              "column": 28,
+              "code": "UP017"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/repositories/rule_snapshot_repository.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        },
+        {
+          "path": "/repos/aml-transaction-monitoring/backend/app/routers/alerts.py",
+          "findings": [
+            {
+              "msg": "Import block is un-sorted or un-formatted",
+              "line": 2,
+              "column": 1,
+              "code": "I001"
+            }
+          ]
+        }
+      ],
+      "report_path": "/repos/aml-transaction-monitoring/backend/.quality/lint/ruff-result.json",
+      "truncated": true
+    }
+  },
+  "report_dir": "/repos/aml-transaction-monitoring/backend/.quality/lint",
+  "report_paths": {
+    "summary": "/repos/aml-transaction-monitoring/backend/.quality/lint/summary.json",
+    "ruff": "/repos/aml-transaction-monitoring/backend/.quality/lint/ruff-result.json"
+  },
+  "truncated": true
+}

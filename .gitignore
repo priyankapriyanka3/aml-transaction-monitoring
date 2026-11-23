@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+/backend/.venv/
+/backend/venv/
+/backend/env/
+*.egg-info/
+dist/
+build/
+
+# Environment
+/backend/.env
+.env.local
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Logs
+*.log
+/backend/logs/
+
+# Verification scaffolding
+_test.env
+_start_server.py
+_stop_server.py
+_server.log
+_server.pid
+
+# Temp files
+.pids
+*.pid
+tmp/
+temp/
+
+# Build artifacts
+*.egg
+*.wheel
+.eggs/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Documentation builds
+docs/_build/
+
+# Graphify (keep structure, ignore cache)
+graphify-out/cache/
+
+# Verification artifacts
+.verification/
+
+# Auto-added by pipeline
+node_modules/
+*.pyc
+.pass_summaries/
