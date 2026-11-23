@@ -1,0 +1,192 @@
+/* Material 3 Design System for AML Workbench - from design.md and wireframes */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Primary colors */
+  --primary: #005FCC;
+  --on-primary: #FFFFFF;
+  --primary-container: #E8F1FF;
+  --on-primary-container: #001C3D;
+  --primary-container-border: #A6CAFF;
+  
+  /* Secondary colors */
+  --secondary: #0066CC;
+  --secondary-container: #D6E4FF;
+  --on-secondary-container: #001B3E;
+  
+  /* Surface colors */
+  --background: #F8F9FA;
+  --on-background: #1A1C1E;
+  --surface: #FFFFFF;
+  --on-surface: #1C1C1E;
+  --surface-variant: #EFF1F4;
+  --on-surface-variant: #636366;
+  --surface-container-low: #F4F5F8;
+  --surface-container: #EDEDF2;
+  --surface-container-high: #E7E8ED;
+  
+  /* Outline */
+  --outline: #D1D1D6;
+  --outline-variant: #E5E5EA;
+  
+  /* Inverse */
+  --inverse-surface: #2E3033;
+  --inverse-on-surface: #F1F0F4;
+  --inverse-primary: #A6CAFF;
+  
+  /* Status colors */
+  --error: #BA1A1A;
+  --critical: #BA1A1A;
+  --critical-container: #FFEBEA;
+  --on-critical-container: #410002;
+  --warning: #8A4B00;
+  --warning-container: #FFF0D6;
+  --on-warning-container: #2C1600;
+  --success: #1B6D2F;
+  --success-container: #E8F8EE;
+  --on-success-container: #002206;
+  --info: #0061A4;
+  --info-container: #D1E4FF;
+  --on-info-container: #001D36;
+  
+  /* Spacing - 4dp baseline grid */
+  --spacing-2xs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 40px;
+  --spacing-4xl: 48px;
+  
+  /* Shape */
+  --radius-extra-small: 4px;
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-extra-large: 28px;
+  --radius-full: 9999px;
+  
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--background);
+  color: var(--on-surface);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography scales */
+.headline-large {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.headline-medium {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.headline-small {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.title-large {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.title-medium {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.15px;
+}
+
+.title-small {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+.body-medium {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.body-small {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.label-large {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+.label-medium {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.label-small {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+/* Utility classes */
+.text-muted {
+  color: var(--on-surface-variant);
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semibold {
+  font-weight: 600;
+}

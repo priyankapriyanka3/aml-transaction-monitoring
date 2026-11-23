@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  backend:
+    x-preview-port: 8000
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////data/app.db
+      SECRET_KEY: dev-secret-key-change-in-production
+      JWT_SECRET: dev-jwt-secret-change-in-production
+      CORS_ORIGINS: http://localhost,http://localhost:80,http://frontend
+    env_file:
+      - backend/dev.env
+    volumes:
+      - backend-data:/data
+    networks:
+      - app-network
+
+  frontend:
+    x-preview-port: 80
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        BACKEND_HOST: backend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+volumes:
+  backend-data:
+
+networks:
+  app-network:
+    driver: bridge
